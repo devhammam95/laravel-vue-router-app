@@ -5,7 +5,7 @@
 
                 <div class="navbar-header">
                     <router-link class="navbar-brand" :to="{name:'home'}">
-                        VueRouter App 
+                        VueRouter App
                     </router-link>
                 </div>
 
@@ -31,7 +31,10 @@
         name: "core.vue"
     }
 </script>
+<style>
+    body { padding-top: 70px; }
 
+</style>
 <style lang="sass">
 
     $icon-font-path: "../../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/"
