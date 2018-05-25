@@ -1,13 +1,11 @@
 <template>
     <div>
-        <h3>VueRouter App</h3>
-
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
 
                 <div class="navbar-header">
                     <router-link class="navbar-brand" :to="{name:'home'}">
-                        VueRouter App
+                        VueRouter App 
                     </router-link>
                 </div>
 

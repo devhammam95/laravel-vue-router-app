@@ -60,4 +60,4 @@ const app = new Vue({
     components:{ core },
     router,
 });
- Vue.config.devtools=true;
+Vue.config.devtools=true;

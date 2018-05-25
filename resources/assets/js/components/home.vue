@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="lead">
         <h3>Home page</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Illo, inventore, laudantium. Alias blanditiis cum doloribus, eum, fuga

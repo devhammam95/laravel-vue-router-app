@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>Laravel</title>
+        <title>{{ config('app.name') }}</title>
 
         <!-- Fonts -->
         <link href="{{ asset('css/app.css') }}">
@@ -66,21 +66,14 @@
             }
         </style>
     </head>
-    <body >
+
+    <body>
 
   <div id="app">
-      <h3 style="text-align: center;">
-          Welcome to our app
-      </h3>
-
-
 
       <core></core>
 
   </div>
-
-
-
 
     </body>
 

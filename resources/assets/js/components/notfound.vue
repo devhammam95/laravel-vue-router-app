@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <span class="text-center">404</span><br>
-        <span>tis page is not found</span>
+    <div class="text-center lead">
+        <h2 class="text-danger">404</h2>
+        <span  class="text-muted">This page not found</span>
     </div>
 </template>
 

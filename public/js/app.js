@@ -46274,8 +46274,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "core.vue"
@@ -46422,7 +46420,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "lead" }, [
       _c("h3", [_vm._v("Home page")]),
       _vm._v(" "),
       _c("p", [
@@ -46581,10 +46579,12 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("p", [
-        _vm._v(
-          "\n        My name is mohamed ,you can call me hammam, i php web developer\n        and love all things\n    "
-        )
+      _c("p", { staticClass: "lead" }, [
+        _vm._v("\n        My name is "),
+        _c("sup", [_vm._v("Mohamed")]),
+        _vm._v(" ,you can call me "),
+        _c("sup", [_vm._v("hammam")]),
+        _vm._v(",php web developer\n        and love all things.\n    ")
       ])
     ])
   }
@@ -46725,7 +46725,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "lead" }, [
       _c("span", [_vm._v("Here the info of contact")]),
       _vm._v(" "),
       _c("div", [
@@ -46870,11 +46870,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("span", { staticClass: "text-center" }, [_vm._v("404")]),
-      _c("br"),
+    return _c("div", { staticClass: "text-center lead" }, [
+      _c("h2", { staticClass: "text-danger" }, [_vm._v("404")]),
       _vm._v(" "),
-      _c("span", [_vm._v("tis page is not found")])
+      _c("span", { staticClass: "text-muted" }, [_vm._v("This page not found")])
     ])
   }
 ]
@@ -46964,9 +46963,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", [_vm._v("VueRouter App")]),
-    _vm._v(" "),
-    _c("nav", { staticClass: "navbar navbar-default" }, [
+    _c("nav", { staticClass: "navbar navbar-default navbar-fixed-top" }, [
       _c("div", { staticClass: "container" }, [
         _c(
           "div",
@@ -46975,7 +46972,7 @@ var render = function() {
             _c(
               "router-link",
               { staticClass: "navbar-brand", attrs: { to: { name: "home" } } },
-              [_vm._v("\n                    VueRouter App\n                ")]
+              [_vm._v("\n                    VueRouter App \n                ")]
             )
           ],
           1
