@@ -19,10 +19,12 @@ Vue.use(VueRouter);
  */
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
-const core   = Vue.component('core',require('./components/coreApp'));
-const home   = Vue.component('home',require('./components/home'));
-const about  = Vue.component('about',require('./components/about'));
-const contact= Vue.component('contact',require('./components/contact'));
+
+const core     = Vue.component('core',require('./components/core'));
+const home     = Vue.component('home',require('./components/home'));
+const about    = Vue.component('about',require('./components/about'));
+const contact  = Vue.component('contact',require('./components/contact'));
+const notFound = Vue.component('notfound',require('./components/notfound'));
 
 const router=new VueRouter({
     mode:'history',
@@ -42,6 +44,11 @@ const router=new VueRouter({
             path:'/contact',
             name:'contact',
             component:contact
+        },
+        {
+            path:'*',
+            name:'notFound',
+            component:notFound
         }
     ],
 
@@ -53,3 +60,4 @@ const app = new Vue({
     components:{ core },
     router,
 });
+ Vue.config.devtools=true;
