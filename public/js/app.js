@@ -46874,7 +46874,9 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-center lead" }, [
       _c("h2", { staticClass: "text-danger" }, [_vm._v("404")]),
       _vm._v(" "),
-      _c("span", { staticClass: "text-muted" }, [_vm._v("This page not found")])
+      _c("span", { staticClass: "text-muted" }, [
+        _vm._v(" This page not found")
+      ])
     ])
   }
 ]
