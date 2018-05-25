@@ -1402,6 +1402,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __webpack_require__(14);
 
 window.Vue = __webpack_require__(38);
+// to import vueRouter --best way
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
 
@@ -1412,29 +1413,34 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
  */
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
+var core = Vue.component('core', __webpack_require__(73));
 var home = Vue.component('home', __webpack_require__(42));
 var about = Vue.component('about', __webpack_require__(48));
 var contact = Vue.component('contact', __webpack_require__(53));
 
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
-  mode: 'history',
-  routes: [{
-    path: '/about',
-    name: 'about',
-    component: about
-  }, {
-    path: '/contact',
-    name: 'contact',
-    component: contact
-  }]
+    mode: 'history',
+    routes: [{
+        path: '/',
+        name: 'home',
+        component: home
+    }, {
+        path: '/about',
+        name: 'about',
+        component: about
+    }, {
+        path: '/contact',
+        name: 'contact',
+        component: contact
+    }]
 
 });
 
 // app
 var app = new Vue({
-  el: '#app',
-  components: { home: home },
-  router: router
+    el: '#app',
+    components: { core: core },
+    router: router
 });
 
 /***/ }),
@@ -46227,7 +46233,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -46285,6 +46291,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "home.vue"
@@ -46298,27 +46313,36 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", [_vm._v("Vue Router Demo App")]),
-    _vm._v(" "),
-    _c(
-      "p",
-      [
-        _c("router-link", { attrs: { to: { name: "contact" } } }, [
-          _vm._v("Contact")
-        ]),
-        _vm._v(" |\n        "),
-        _c("router-link", { attrs: { to: { name: "about" } } }, [
-          _vm._v("About")
-        ])
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "container" }, [_c("router-view")], 1)
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h3", [_vm._v("Home page")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        Illo, inventore, laudantium. Alias blanditiis cum doloribus, eum, fuga\n        fugiat id in neque, non obcaecati quisquam recusandae similique ut veniam voluptates?\n        Velit?\n    "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        Illo, inventore, laudantium. Alias blanditiis cum doloribus, eum, fuga\n        fugiat id in neque, non obcaecati quisquam recusandae similique ut veniam voluptates?\n        Velit?\n    "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        Illo, inventore, laudantium. Alias blanditiis cum doloribus, eum, fuga\n        fugiat id in neque, non obcaecati quisquam recusandae similique ut veniam voluptates?\n        Velit?\n    "
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -46414,7 +46438,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -46425,6 +46449,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -46453,9 +46479,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h2", [_vm._v("sdfsdf")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("sdfsdf ")])
+      _c("p", [
+        _vm._v(
+          "\n        My name is mohamed ,you can call me hammam, i php web developer\n        and love all things\n    "
+        )
+      ])
     ])
   }
 ]
@@ -46596,10 +46624,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("span", [_vm._v("here the info of contact")]),
+      _c("span", [_vm._v("Here the info of contact")]),
       _vm._v(" "),
       _c("div", [
-        _vm._v("\n        contact me via my mail:devhammam95@gmail.com\n    ")
+        _vm._v("\n        You contact me via my mail:"),
+        _c("a", { attrs: { href: "mailto:devhammam95@gmail.com" } }, [
+          _vm._v("devhammam95@gmail.com")
+        ])
       ])
     ])
   }
@@ -46618,6 +46649,181 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(74)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(76)
+/* template */
+var __vue_template__ = __webpack_require__(77)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-d748458a"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/coreApp.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-d748458a", Component.options)
+  } else {
+    hotAPI.reload("data-v-d748458a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(75);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("581b9b35", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d748458a\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./coreApp.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d748458a\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./coreApp.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 76 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "coreApp.vue"
+});
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("h3", [_vm._v("VueRouter App")]),
+    _vm._v(" "),
+    _c(
+      "p",
+      [
+        _c("router-link", { attrs: { to: { name: "home" } } }, [
+          _vm._v("   Home   ")
+        ]),
+        _vm._v(" "),
+        _c("router-link", { attrs: { to: { name: "about" } } }, [
+          _vm._v("  About  ")
+        ]),
+        _vm._v(" "),
+        _c("router-link", { attrs: { to: { name: "contact" } } }, [
+          _vm._v("Contact")
+        ])
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [_c("router-view")], 1)
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-d748458a", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

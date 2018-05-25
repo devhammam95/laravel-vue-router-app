@@ -75,8 +75,7 @@
 
 
 
-
-      <home></home>
+      <core></core>
 
   </div>
 

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <span>here the info of contact</span>
+        <span>Here the info of contact</span>
         <div>
-            contact me via my mail:devhammam95@gmail.com
+            You contact me via my mail:<a href="mailto:devhammam95@gmail.com">devhammam95@gmail.com</a>
         </div>
     </div>
 

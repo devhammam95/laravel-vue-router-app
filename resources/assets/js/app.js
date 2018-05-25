@@ -8,6 +8,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+// to import vueRouter --best way
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
@@ -18,6 +19,7 @@ Vue.use(VueRouter);
  */
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
+const core   = Vue.component('core',require('./components/coreApp'));
 const home   = Vue.component('home',require('./components/home'));
 const about  = Vue.component('about',require('./components/about'));
 const contact= Vue.component('contact',require('./components/contact'));
@@ -26,15 +28,20 @@ const router=new VueRouter({
     mode:'history',
     routes:[
         {
+            path:'/',
+            name:'home',
+            component:home
+        },
+        {
          path:'/about',
          name:'about',
          component:about
         }
         ,
         {
-         path:'/contact',
-         name:'contact',
-         component:contact
+            path:'/contact',
+            name:'contact',
+            component:contact
         }
     ],
 
@@ -43,6 +50,6 @@ const router=new VueRouter({
 // app
 const app = new Vue({
     el: '#app',
-    components:{ home },
+    components:{ core },
     router,
 });
