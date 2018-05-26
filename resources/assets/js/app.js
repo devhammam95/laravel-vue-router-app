@@ -20,11 +20,18 @@ Vue.use(VueRouter);
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const core     = Vue.component('core',require('./components/core'));
-const home     = Vue.component('home',require('./components/home'));
-const about    = Vue.component('about',require('./components/about'));
-const contact  = Vue.component('contact',require('./components/contact'));
-const notFound = Vue.component('notfound',require('./components/notfound'));
+/*const core     = Vue.component('core',require('./components/core.vue'));
+const home     = Vue.component('home',require('./components/home.vue'));
+const about    = Vue.component('about',require('./components/about.vue'));
+const contact  = Vue.component('contact',require('./components/contact.vue'));
+const notFound = Vue.component('notfound',require('./components/notfound.vue'));
+*/
+
+import  core     from './components/core';
+import  home     from './components/home';
+import  about    from './components/about';
+import  contact  from './components/contact';
+import  notFound from './components/notfound';
 
 const router=new VueRouter({
     mode:'history',

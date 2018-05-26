@@ -10,7 +10,6 @@
 
 <script>
     export default {
-        name: "contact.vue"
     }
 </script>
 

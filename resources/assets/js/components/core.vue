@@ -28,7 +28,6 @@
 
 <script>
     export default {
-        name: "core.vue"
     }
 </script>
 <style>

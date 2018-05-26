@@ -9,7 +9,7 @@
 
 <script>
     export default {
-        name: "about.vue"
+        name: "about"
     }
 </script>
 
